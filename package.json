@@ -1,0 +1,52 @@
+{
+  "name": "react.js-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g '.commitlintrc.yml'",
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test:once"
+    }
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build -- --stats",
+    "test:watch": "react-scripts test",
+    "test:once": "react-scripts test --watchAll=false",
+    "styleguide": "FAST_REFRESH=false styleguidist server --port=6060",
+    "analyze": "npx webpack-bundle-analyzer 'build/bundle-stats.json'"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "commitizen": "4.2.2",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "husky": "4.3.6",
+    "lint-staged": "10.5.3",
+    "node-sass": "4.14.1",
+    "prop-types": "15.7.2",
+    "react-styleguidist": "11.1.5",
+    "stylelint": "13.8.0",
+    "stylelint-a11y": "1.2.3",
+    "stylelint-config-standard": "20.0.0",
+    "webpack-bundle-analyzer": "4.3.0"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "1.5.0",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.1.0",
+    "@testing-library/user-event": "12.1.10",
+    "i18next": "19.8.4",
+    "i18next-browser-languagedetector": "6.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-helmet-async": "1.0.7",
+    "react-i18next": "11.8.4",
+    "react-redux": "7.2.2",
+    "react-scripts": "4.0.1",
+    "sanitize.css": "12.0.1",
+    "web-vitals": "0.2.4"
+  }
+}

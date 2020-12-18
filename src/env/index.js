@@ -1,0 +1,1 @@
+export { isDevelopmentMode } from './getAppMode';

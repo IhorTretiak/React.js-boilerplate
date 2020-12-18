@@ -1,0 +1,42 @@
+extends: ['stylelint-config-standard']
+
+plugins: ['stylelint-a11y']
+
+rules:
+  # Color
+  color-named:                                        'never'
+  # Font
+  font-family-name-quotes:                            'always-unless-keyword'
+  font-weight-notation:                               'numeric'
+  # Function
+  function-disallowed-list: [
+    'matrix',
+    'translate', 'translateX', 'translateY', 'translateZ',
+    'scale', 'scaleX', 'scaleY', 'scaleZ',
+    'rotate', 'rotateX', 'rotateY', 'rotateZ',
+    'skew', 'skewX', 'skewY'
+  ]
+  function-url-no-scheme-relative:                    true
+  function-url-quotes:                                'always'
+  # String
+  string-quotes:                                      'double'
+  # Number
+  number-max-precision:                               3
+  # Property
+  property-no-unknown:                                true
+  # Declaration block
+  declaration-block-no-redundant-longhand-properties: true
+  # Selector
+  selector-max-empty-lines:                           1
+  selector-attribute-quotes:                          'always'
+  # General / Sheet
+  max-nesting-depth:                                  2
+  no-unknown-animations:                              true
+  max-line-length:                                    120
+  # Shorthand property
+  shorthand-property-no-redundant-values:             true
+  # Stylelint-a11y (https://github.com/YozhikM/stylelint-a11y)
+  a11y/selector-pseudo-class-focus:                   true
+  a11y/no-display-none:                               true
+  a11y/content-property-no-static-value:              true
+  a11y/no-outline-none:                               true

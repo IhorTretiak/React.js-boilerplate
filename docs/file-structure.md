@@ -1,0 +1,35 @@
+## 📁 File structure
+
+- `/docs` contains project documentation;
+- `/nginx` contains [NGINX](https://nginx.org/) configuration file. Used in [Docker](https://www.docker.com/);
+- `/public` contains static assets like the HTML page we're planning to deploy to. You can delete any file in this folder apart from `index.html`;
+  - `/assets` - static assets like images, fonts, etc;
+- `/src` contains our code:
+  - `/components` - 'dumb-components'/presentational;
+  - `/domains` - complex components with logic/screens. Read more [Domain Driven Design](https://css-tricks.com/domain-driven-design-with-react/);
+  - `/env` - get env variables, check them;
+  - `/i18n` - [localization](https://www.i18next.com/);
+  - `/store` - [Redux Store](https://redux.js.org/tutorials/fundamentals/part-4-store) - hooks up the stores and provides initial/template states;
+  - `/utils` - utils and custom libraries;
+  - `index.jsx` - the entry-point for our app;
+  - `routes.jsx` - the navigation for our app;
+  - `setupTests.js` - [Read more](https://create-react-app.dev/docs/running-tests/#initializing-test-environment);
+- `.browserslistrc` - [Read more](https://github.com/browserslist/browserslist);
+- `.commitlintrc` - [Read more](https://commitlint.js.org/);
+- `.dockerignore` - [Read more](https://docs.docker.com/engine/reference/builder/#dockerignore-file);
+- `.editorconfig` - [Read more](https://editorconfig.org/);
+- `.env*`- [Read more](https://en.wikipedia.org/wiki/Environment_variable#:~:text=An%20environment%20variable%20is%20a,in%20which%20a%20process%20runs.);
+- `.eslintrc` - [Read more](https://eslint.org/);
+- `.gitignore` - [Read more](https://git-scm.com/docs/gitignore);
+- `.lintstagedrc` - [Read more](https://github.com/okonet/lint-staged);
+- `.npmrc` - [Read more](https://docs.npmjs.com/cli/v6/configuring-npm/npmrc);
+- `.nvmrc` - [Read more](https://github.com/nvm-sh/nvm#nvmrc);
+- `.stylelintrc` - [Read more](https://stylelint.io/);
+- `docker-compose` - [Read more](https://docs.docker.com/compose/compose-file/);
+- `Docker` - [Read more](https://docs.docker.com/engine/reference/builder/);
+- `jsconfig.json` - [Read more](https://create-react-app.dev/docs/importing-a-component/);
+- `LICENSE` - [Read more](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository);
+- `package.json` - [Read more](https://docs.npmjs.com/cli/v6/configuring-npm/package-json);
+- `package-lock.json` - [Read more](https://docs.npmjs.com/cli/v6/configuring-npm/package-lock-json);
+- `README.md` - [Read more](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-readmes);
+- `styleguide.config.js` - [Read more](https://react-styleguidist.js.org/docs/configuration/);

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  sample-prod:
+    container_name: app_client
+    restart:        always
+    build:
+      context:    .
+      dockerfile: Dockerfile
+      args:
+        DOCKER_TIMEZONE: ${DOCKER_TIMEZONE}
+        NODE_VERSION:    ${NODE_VERSION}
+    env_file:
+      - .env
+    ports:
+      - 5000:80
